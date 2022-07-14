@@ -1,8 +1,8 @@
 import './App.css';
 import * as React from 'react';
 import TaskList from './components/TasksList';
-import ResponsiveAppBar from './components/ResponsiveAppBar';
-import Footer from './components/footer/Footer';
+import ResponsiveAppBar from './components/layout/Header';
+import Footer from './components/layout/Footer';
 
 function App() {
     return (
@@ -15,7 +15,7 @@ function App() {
                 <TaskList />
             </main>
 
-            <footer>
+            <footer className="App-footer">
                 <Footer />
             </footer>
         </div>
