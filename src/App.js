@@ -11,7 +11,7 @@ function App() {
                 <ResponsiveAppBar />
             </header>
 
-            <main className="App-main">
+            <main>
                 <TaskList />
             </main>
 

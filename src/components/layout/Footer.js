@@ -6,9 +6,7 @@ function Footer() {
     return (
         <Box>
             <Container>
-                <div>
-                    asdas
-                </div>
+                Footer
             </Container>
         </Box>
     )
