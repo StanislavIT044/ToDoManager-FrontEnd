@@ -1,9 +1,11 @@
 import './App.css';
 import * as React from 'react';
 import TaskList from './components/TasksList';
+import RegisterForm from './components/RegisterForm';
+import Profile from './components/Profile';
 import ResponsiveAppBar from './components/layout/Header';
 import Footer from './components/layout/Footer';
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
     return (
@@ -15,7 +17,8 @@ function App() {
             <main>
                 <Routes>
                     <Route path="/" element={<TaskList />} />
-                    <Route path="/a" element={<div>asd</div>} />
+                    <Route path="/register" element={<RegisterForm />} />
+                    <Route path="/profile" element={<Profile />} />
                 </Routes>                
             </main>
 
