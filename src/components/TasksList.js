@@ -125,8 +125,8 @@ const rows = [
 
 export default function CollapsibleTable() {
     return (
-        <TableContainer style={{maxWidth: "70%", margin: "20px 20px 20px 20px", border: "5px"}} component={Paper}>
-            <Table aria-label="collapsible table" style={{backgroundColor: "",  minHeight: "100%", maxWidth: "100%"}}>
+        <TableContainer style={{ maxWidth: "70%", margin: "20px 20px 20px 20px", border: "2px solid #1976d2", borderRadius: "10px" }} component={Paper}>
+            <Table aria-label="collapsible table" style={{ backgroundColor: "", minHeight: "100%", maxWidth: "100%" }}>
                 <TableHead>
                     <TableRow>
                         <TableCell />

@@ -1,6 +1,5 @@
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
-import { padding } from '@mui/system';
 
 export default function RegisterForm() {
     return (
@@ -13,15 +12,19 @@ export default function RegisterForm() {
             <form>
                 <div style={{ marginTop: "20px" }}>
                     <TextField
-                        style={{ marginRight: "5px"}}
-                        id="outlined-name"
+                        style={{ marginRight: "5px", minWidth: "300px"}}
+                        id="firstName"
                         label="First name"
+                        required
+                        inputProps={{ minLength: 2, maxLength: 30 }}
+                        // helperText
+                        // error="err"
                     // value={"name"}
                     // onChange={handleChange}
                     />
 
                     <TextField
-                        style={{ marginLeft: "5px"}}
+                        style={{ marginLeft: "5px", minWidth: "300px" }}
                         id="outlined-name"
                         label="Last name"
                     />
@@ -29,26 +32,38 @@ export default function RegisterForm() {
 
                 <div style={{ marginTop: "20px" }}>
                     <TextField
+                        style={{ marginRight: "5px", minWidth: "300px" }}
                         id="outlined-name"
                         label="Email"
                     />
+
+                    <TextField
+                        style={{ marginLeft: "5px", minWidth: "300px" }}
+                        id="outlined-name"
+                        label="Username"
+                        type="Email"
+                    />
                 </div>
+
+
 
                 <div style={{ marginTop: "20px" }}>
                     <TextField
+                        style={{ marginRight: "5px", minWidth: "300px" }}
                         id="outlined-name"
                         label="Password"
+                        type="Password"
                     />
-                </div>
 
-                <div style={{ marginTop: "20px" }}>
                     <TextField
+                        style={{ marginLeft: "5px", minWidth: "300px" }}
                         id="outlined-name"
                         label="Confirm password"
+                        type="Password"
                     />
                 </div>
 
-                <Button variant="contained" style={{ marginTop: "20px", marginBottom: "20px" }}>Register</Button>
+                <Button type='submit' variant="contained" style={{ marginTop: "20px", marginBottom: "20px" }}>Register</Button>
             </form>
         </div>
     );
